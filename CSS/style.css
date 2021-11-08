@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
+/* Main CSS + Home Page */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.stack {
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    font-family: 'NTR', sans-serif;
+    font-size: 20pt;
+    padding: 10pt;
+    text-decoration: none;
+}
+
+.welcome {
+    position: absolute;
+    top: 48.5%;
+    text-shadow:5px 2px 7px rgba(0,0,0,.6);
+    font-family: 'NTR', sans-serif;
+    font-size: 32pt;
+    padding: 10pt;
+    color: white;
+}
+
+li a:hover{
+    background-color:darkgray;
+}
+h2 {
+    font-family: 'NTR', sans-serif;
+}
+
+[class^="box"] {
+    color:white;
+    font-family: 'NTR', sans-serif;
+    font-size: 38pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    box-shadow: 4px 4px 4px rgba(0,0,0,.3);
+    padding: 10px;
+    height: 55vh;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+    border-radius: 5pt;
+}
+
+header {
+    font-size: 22pt;
+    text-shadow: none;
+}
+
+.box1 { background: url("../Image/iceAge.jpeg");
+    color: black;
+    background-size: cover;
+    background-position-x: 80%;
+    flex-basis: 32%;    
+    max-width: 100%;
+}
+.box2 { background: url("../Image/dead_triceratops_by_imprisonedlight_d60138f-fullview.jpg");
+    background-size: cover;
+    background-position-x: 80%;
+    flex-basis: 32%;
+    max-width: 100%;
+}
+.box3 { background:url("../Image/pangea-with-modern-borders-1200.jpg");
+    color: black;  
+    background-size: cover;
+    background-position-x: 0%;
+    flex-basis: 32%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+article p{
+    text-align: center;
+    font-family: 'NTR', sans-serif;
+    font-size: 27px;
+}
+
+div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/* Footer */
+footer {
+    background-color: #38b6ff;
+    color: white;
+    text-align: left;
+    text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+    font-family: 'NTR', sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-1 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer img {
+    max-height: 50%;
+    left: 50%;
+}
+.footer-2 {
+    width: 15vw;
+}
+
+#footer-email {
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    width: 98.5%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+#footer-email-button {
+    background-color: black;
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    font-style: bold;
+    color: white;
+    text-align: center;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    border: none;
+    border-radius: 5px;
+    padding: 2;
+}
+
+
+/* About CSE */
+.box4 { background: lightgray;
+    color: black;
+    background-size: cover;
+    background-position-x: 80%;
+    flex-basis: 32%;
+    flex-grow: 10vh;}
+.box5 { background: lightgray;
+    color: black;
+    background-size: cover;
+    background-position-x: 80%;
+    flex-basis: 32%;
+    flex-grow: 0;}
+.box6 { background: lightgray;
+    color: black;  
+    background-size: cover;
+    background-position-x: 0%;
+    height: 55vh;
+    flex-basis: 32%;
+    overflow-y: scroll;
+}
+
+[class^="tg"] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    font-size: 12pt;
+    margin: 5px;
+    margin-left: 5px;
+}
+
+.tg1 img {
+    max-width: 30%;
+    border-radius: 5pt;
+    box-shadow: 4px 2px 4px rgba(0,0,0,0.1);
+}
+
+.tg1 div {
+    width: 70%;
+}
+
+/* Expeditions */
+
+.two-thirds {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 62%;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.one-thirds {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 37%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+[ class^="xp"] {
+    display: flex;
+    box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+    margin: 5pt;
+    text-align: left;
+    text-shadow:4px 2px 4px rgba(0,0,0,0.1);
+    font-family: 'NTR', sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.xp1 img {
+    margin: 5px;
+    max-width: 500px;
+    border-radius: 5pt;
+    box-shadow: 4px 2px 4px rgba(0,0,0,0.1);
+}
+.xp1 div {
+    width: 70%;
+    margin: 5px;
+}
+
+
+[ class^="quote"] {
+    color: black;
+    font-family: 'NTR', sans-serif;
+    font-size: 38pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    border-radius: 5pt;
+}
+.quote {
+    background-color: lightgray;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.3);
+    max-width: 617px;
+}
+
+.quote select {
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.getQuote {
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    width: 98.5%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.pageButton {
+    color: black;
+    font-weight: bold;
+    background-color: #38b6ff;
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    font-style: bold;
+    text-align: center;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    width: 32%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    cursor: pointer;
+}
+
+/* Buy Now! */
+.buyForm {
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.buyBack {
+    background-color: lightgray;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.3);
+    font-family: 'NTR', sans-serif;
+    font-size: 14pt;
+    text-align: left;
+    text-shadow:5px 2px 7px rgba(0,0,0,.4);
+    max-width: 90%;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+form p {
+    margin: 5px;
+}
+
+.purchase img {
+    margin: 5px;
+    max-width: 98.5%;
+    border-radius: 5pt;
+    box-shadow: 4px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Rules */
+
+.halves {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 32%;
+    flex-wrap: wrap;
+    align-content: normal;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+[ class^="halves"] {
+    display: flex;
+    box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+    margin: 5pt;
+    text-align: left;
+    text-shadow:4px 2px 4px rgba(0,0,0,0.1);
+    font-family: 'NTR', sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.halves img {
+    margin: 5px;
+    max-width: 98%;
+    border-radius: 5pt;
+    box-shadow: 4px 2px 4px rgba(0,0,0,0.1);
+}
+.halves div {
+    width: 70%;
+    margin: 5px;
+}
+

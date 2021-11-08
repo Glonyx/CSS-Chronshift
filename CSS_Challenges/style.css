@@ -1,0 +1,49 @@
+video {
+    transform: scaleX(1.25);
+    width: 200;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.title_header {
+    position: relative;
+    height: 97vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 7vw;
+    text-shadow: 5px 5px 15px skyblue;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff4d1;
+}
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow: 
+        0 0 4px #ffedb0,
+        0 0 11px #ffedb0,
+        0 0 19px #ffedb0,
+        0 0 40px #ffedb0,
+        0 0 80px #ffedb0,
+        0 0 90px #ffedb0,
+        0 0 100px #ffedb0,
+        0 0 150px #ffedb0;
+     }
+
+     20%, 24%, 55% {
+         text-shadow: none;
+     }
+    }   
+.neonText {
+    animation: flicker 1.5s infinite alternate; 
+    color: #fff4d1;
+}
